@@ -6,7 +6,7 @@ import psutil
 
 
 def check_server_disk():
-	path = '/pythonscript/put/'
+	path = '/pythonscript/out/'
 	st = os.statvfs(path)
 	free = st.f_bfree/st.f_blocks * 100
 	print(free)
