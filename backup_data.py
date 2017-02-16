@@ -24,7 +24,7 @@ def mysqlduml(host,user,password,database_name,port=3306,skipdata=False):
 
 
 def backup_xxdata():
-	shell_str = 'find /home/ -name "*.tar.gz" -mtime -5 | xargs -I {} scp {} /backup_data'
+	shell_str = 'find /home/ -name "*.tar.gz" -mtime -500 | xargs -I {} scp {} /backup_data'
 	os.system(shell_str)
 
 def run():
